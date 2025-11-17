@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTrack - Inventory Management</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand brand-gradient" href="#">QuickTrack</a>
+            <button class="btn btn-outline-primary btn-login" type="button" onclick="window.location.href='role-selection.html'">Login</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Left Content -->
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold text-purple mb-4">
+                        Inventory<br>Management
+                    </h1>
+
+                    <p class="lead text-muted mb-4">
+                        <span class="fw-semibold text-dark">QuickTrack</span> is an inventory management website designed to streamline
+                        inventory processes for stores. It provides real-time tracking of stock levels,
+                        notifications for low inventory, and detailed analytics to help stores make informed
+                        decisions. Technologically, we can assist users by integrating mobile compatibility
+                        and APIs for syncing with existing systems to enhance user convenience and
+                        operational efficiency.
+                    </p>
+
+                    <div class="d-flex gap-3 flex-wrap">
+                        <button class="btn btn-primary btn-lg rounded-pill px-4 btn-signup">Sign Up</button>
+                        <button class="btn btn-gradient btn-lg rounded-pill px-4" onclick="window.location.href='role-selection.html'">Sign In</button>
+                    </div>
+                </div>
+
+                <!-- Right Illustration -->
+                <div class="col-lg-6">
+                    <div class="illustration-container">
+                        <img src="img/illustrations/hero.png" alt="Inventory Management Illustration" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Watermark -->
+    <div class="watermark">
+        <p class="mb-0">Activate Windows</p>
+        <small>Go to Settings to activate Windows</small>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
