@@ -1,0 +1,108 @@
+.purchase-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.purchase-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.15);
+}
+
+.purchase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #F3F4F6;
+}
+
+.supplier-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1F2937;
+}
+
+.purchase-status {
+    padding: 0.25rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.status-delivered {
+    background: #D1FAE5;
+    color: #065F46;
+}
+
+.status-pending {
+    background: #FEF3C7;
+    color: #92400E;
+}
+
+.status-transit {
+    background: #DBEAFE;
+    color: #1E40AF;
+}
+
+.purchase-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.info-label {
+    color: #6B7280;
+    font-size: 0.9rem;
+}
+
+.info-value {
+    color: #1F2937;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.purchase-total {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #7C3AED;
+    text-align: right;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #F3F4F6;
+}
+
+.new-purchase-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.new-purchase-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 35px rgba(124, 58, 237, 0.5);
+}
+
+@media (max-width: 767px) {
+    .new-purchase-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 1.75rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+}

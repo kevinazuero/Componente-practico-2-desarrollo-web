@@ -1,0 +1,149 @@
+.notification-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.notification-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.notification-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.15);
+}
+
+.notification-card.unread {
+    background: linear-gradient(to right, #F9FAFB 0%, #FFFFFF 100%);
+    border-left: 4px solid #7C3AED;
+}
+
+.notification-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon-warning {
+    background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+}
+
+.icon-info {
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+}
+
+.icon-success {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+.icon-alert {
+    background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 0.5rem;
+}
+
+.notification-message {
+    color: #6B7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.notification-time {
+    font-size: 0.85rem;
+    color: #9CA3AF;
+    font-weight: 500;
+}
+
+.notification-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.badge-new {
+    background: #7C3AED;
+    color: white;
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #E5E7EB;
+    flex-wrap: wrap;
+}
+
+.filter-tab {
+    padding: 1rem 1.5rem;
+    background: none;
+    border: none;
+    color: #6B7280;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.filter-tab:hover {
+    color: #7C3AED;
+}
+
+.filter-tab.active {
+    color: #7C3AED;
+}
+
+.filter-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #7C3AED;
+}
+
+@media (max-width: 767px) {
+    .notification-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .notification-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .filter-tabs {
+        justify-content: center;
+    }
+
+    .filter-tab {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+}

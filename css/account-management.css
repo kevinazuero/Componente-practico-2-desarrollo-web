@@ -1,0 +1,176 @@
+.account-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.user-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+}
+
+.user-header {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #F3F4F6;
+}
+
+.user-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.3);
+}
+
+.user-info h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 0.5rem;
+}
+
+.user-role {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #F3F4F6;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    color: #6B7280;
+    font-weight: 600;
+}
+
+.info-value {
+    color: #1F2937;
+    font-weight: 500;
+    text-align: right;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 1.5rem;
+}
+
+.btn-edit-profile {
+    padding: 0.875rem 2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    border: none;
+    background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-edit-profile:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
+}
+
+.btn-change-password {
+    padding: 0.875rem 2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    border: 2px solid #E5E7EB;
+    background: white;
+    color: #6B7280;
+    transition: all 0.3s ease;
+}
+
+.btn-change-password:hover {
+    background: #F3F4F6;
+    border-color: #D1D5DB;
+    color: #374151;
+    transform: translateY(-2px);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #6B7280;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {
+    .user-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .user-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .info-value {
+        text-align: left;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

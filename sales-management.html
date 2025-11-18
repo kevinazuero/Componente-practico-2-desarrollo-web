@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTrack - Sales Management</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/sales-management.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<!-- Top Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand brand-purple" href="#">supersavers store</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto d-flex align-items-center gap-3">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="manager-dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-purple fw-semibold" href="sales-management.html">Sales Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="purchases-management.html">Purchases Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="new-product.html">New Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Branch 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="index.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="dashboard-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a class="sidebar-item active" href="manager-dashboard.html">
+            <div class="sidebar-icon">
+                <i class="fa-solid fa-store"></i>
+            </div>
+            <span class="sidebar-label">Inventory</span>
+        </a>
+
+        <a class="sidebar-item active" href="notifications.html">
+            <div class="sidebar-icon">
+                <div class="notification-badge">2</div>
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <span class="sidebar-label">Notifications</span>
+        </a>
+
+        <a class="sidebar-item active" href="index.html">
+            <div class="sidebar-icon">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </div>
+            <span class="sidebar-label">Sign Out</span>
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container-fluid p-4">
+            <!-- Summary Cards Row -->
+            <div class="row g-4 mb-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="summary-card">
+                        <div class="summary-title">Today's Sales</div>
+                        <div class="summary-value">$1,247</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="summary-card">
+                        <div class="summary-title">This Week</div>
+                        <div class="summary-value">$8,932</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="summary-card">
+                        <div class="summary-title">This Month</div>
+                        <div class="summary-value">$34,621</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="summary-card">
+                        <div class="summary-title">Total Transactions</div>
+                        <div class="summary-value">1,247</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active">All Sales</button>
+                <button class="filter-btn">Today</button>
+                <button class="filter-btn">This Week</button>
+                <button class="filter-btn">This Month</button>
+            </div>
+
+            <!-- Sales List -->
+            <div class="row g-4">
+                <!-- Sale 1 -->
+                <div class="col-lg-6">
+                    <div class="sales-card">
+                        <div class="sales-header">
+                            <span class="sale-date">Nov 17, 2025 - 10:34 AM</span>
+                            <span class="sale-total">$127.50</span>
+                        </div>
+                        <div class="sale-item">
+                            <span class="item-name">mama gold 50kg rice</span>
+                            <span class="item-qty">2x $25.50</span>
+                        </div>
+                        <div class="sale-item">
+                            <span class="item-name">abakaliki rice</span>
+                            <span class="item-qty">3x $25.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sale 2 -->
+                <div class="col-lg-6">
+                    <div class="sales-card">
+                        <div class="sales-header">
+                            <span class="sale-date">Nov 17, 2025 - 09:15 AM</span>
+                            <span class="sale-total">$76.50</span>
+                        </div>
+                        <div class="sale-item">
+                            <span class="item-name">honey rice</span>
+                            <span class="item-qty">3x $25.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sale 3 -->
+                <div class="col-lg-6">
+                    <div class="sales-card">
+                        <div class="sales-header">
+                            <span class="sale-date">Nov 16, 2025 - 04:22 PM</span>
+                            <span class="sale-total">$204.00</span>
+                        </div>
+                        <div class="sale-item">
+                            <span class="item-name">royal rice</span>
+                            <span class="item-qty">4x $25.50</span>
+                        </div>
+                        <div class="sale-item">
+                            <span class="item-name">mama gold 50kg rice</span>
+                            <span class="item-qty">4x $25.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sale 4 -->
+                <div class="col-lg-6">
+                    <div class="sales-card">
+                        <div class="sales-header">
+                            <span class="sale-date">Nov 16, 2025 - 02:45 PM</span>
+                            <span class="sale-total">$153.00</span>
+                        </div>
+                        <div class="sale-item">
+                            <span class="item-name">abakaliki rice</span>
+                            <span class="item-qty">6x $25.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sale 5 -->
+                <div class="col-lg-6">
+                    <div class="sales-card">
+                        <div class="sales-header">
+                            <span class="sale-date">Nov 16, 2025 - 11:30 AM</span>
+                            <span class="sale-total">$51.00</span>
+                        </div>
+                        <div class="sale-item">
+                            <span class="item-name">honey rice</span>
+                            <span class="item-qty">2x $25.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sale 6 -->
+                <div class="col-lg-6">
+                    <div class="sales-card">
+                        <div class="sales-header">
+                            <span class="sale-date">Nov 15, 2025 - 05:18 PM</span>
+                            <span class="sale-total">$306.00</span>
+                        </div>
+                        <div class="sale-item">
+                            <span class="item-name">mama gold 50kg rice</span>
+                            <span class="item-qty">5x $25.50</span>
+                        </div>
+                        <div class="sale-item">
+                            <span class="item-name">royal rice</span>
+                            <span class="item-qty">7x $25.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Watermark -->
+<div class="watermark">
+    <p class="mb-0">Activate Windows</p>
+    <small>Go to Settings to activate Windows</small>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
