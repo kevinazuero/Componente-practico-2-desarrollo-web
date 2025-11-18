@@ -69,12 +69,12 @@
         </div>
 
         <!-- Sign Out -->
-        <div class="sidebar-item active">
+        <a class="sidebar-item active" href="index.html">
             <div class="sidebar-icon">
                 <i class="fa-solid fa-right-from-bracket"></i>
             </div>
             <span class="sidebar-label">Sign Out</span>
-        </div>
+        </a>
 
     </div>
     <!-- Main Content -->
@@ -83,18 +83,21 @@
             <div class="row g-4">
                 <!-- New Branch Card -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="branch-card new-branch-card" onclick="alert('Add New Branch')">
-                        <div class="branch-icon-lg">
-                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                                <line x1="30" y1="15" x2="30" y2="45" stroke="white" stroke-width="4"
-                                      stroke-linecap="round"/>
-                                <line x1="15" y1="30" x2="45" y2="30" stroke="white" stroke-width="4"
-                                      stroke-linecap="round"/>
-                            </svg>
+                    <a href="branch-form.html" class="branch-link">
+                        <div class="branch-card new-branch-card">
+                            <div class="branch-icon-lg">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <line x1="30" y1="15" x2="30" y2="45" stroke="white" stroke-width="4"
+                                          stroke-linecap="round"/>
+                                    <line x1="15" y1="30" x2="45" y2="30" stroke="white" stroke-width="4"
+                                          stroke-linecap="round"/>
+                                </svg>
+                            </div>
                         </div>
                         <h5 class="branch-name mt-3">New Branch</h5>
-                    </div>
+                    </a>
                 </div>
+
 
                 <!-- Branch 1 -->
                 <div class="col-lg-4 col-md-6">

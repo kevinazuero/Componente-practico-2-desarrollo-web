@@ -34,3 +34,12 @@ body {
 .main-content {
     padding-bottom: 100px; /* evita que el buscador tape las cards */
 }
+
+.branch-link {
+    text-decoration: none !important; /* Quita el subrayado */
+}
+
+.branch-name {
+    text-align: center;
+}
+

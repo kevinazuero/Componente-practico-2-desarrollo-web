@@ -18,43 +18,28 @@
     color: #7C3AED !important;
 }
 
-/* Branch Cards */
+/* ============================================================
+   BRANCH CARDS — MODIFICACIÓN PEDIDA: SIN FONDO VISIBLE
+   ============================================================ */
+
 .branch-card {
-    background: white;
+    background: transparent !important; /* Sin fondo */
     border-radius: 20px;
-    padding: 2rem;
+    padding: 0 !important; /* Sin padding para que la foto sea el bloque principal */
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     height: 100%;
+    box-shadow: none !important; /* Quitar sombra de card */
 }
 
 .branch-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.15);
 }
 
-.new-branch-card {
-    background: linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%);
-    border: 2px dashed #D1D5DB;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 350px;
-}
-
-.branch-icon-lg {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
+/* ============================================================
+   IMAGEN DE LA SUCURSAL
+   ============================================================ */
 
 .branch-image {
     width: 100%;
@@ -70,20 +55,66 @@
     object-fit: cover;
 }
 
+/* ============================================================
+   NEW BRANCH — MISMO TAMAÑO QUE IMÁGENES
+   ============================================================ */
+
+.new-branch-card {
+    height: 200px;                /* MISMO tamaño exacto que branch-image */
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #7C3AED;          /* Fondo elegante para el icono */
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.new-branch-card:hover {
+    transform: translateY(-5px);
+}
+
+.branch-icon-lg {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* ============================================================
+   TEXTOS
+   ============================================================ */
+
 .branch-name {
     font-size: 1.25rem;
     font-weight: 700;
     color: #1F2937;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .branch-inventory {
     font-size: 0.95rem;
     color: #6B7280;
     margin: 0;
+    text-align: center;
 }
 
-/* Responsive Dashboard */
+.branch-link {
+    text-decoration: none !important;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
 @media (max-width: 991px) {
     .navbar-nav {
         flex-direction: column !important;
@@ -93,7 +124,7 @@
 
 @media (max-width: 767px) {
     .branch-card {
-        padding: 1.5rem;
+        padding: 0 !important;
     }
 
     .branch-image {
@@ -101,11 +132,11 @@
     }
 
     .new-branch-card {
-        min-height: 280px;
+        height: 180px;
     }
 
     .branch-icon-lg {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 }
